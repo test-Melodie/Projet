@@ -1,6 +1,6 @@
 import sys
-from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5 import uic
+from PyQt5 import uic, QtWidgets
+import j2l.pytactx.agent as pytactx
 
 
 class MainWindow(QtWidgets.QMainWindow):
@@ -9,6 +9,8 @@ class MainWindow(QtWidgets.QMainWindow):
         super().__init__(*args, **kwargs)
         uic.loadUi("mainwindow.ui", self)
 
+    def onLoginIdChanged(self, Qstring):
+        print("Login Id changed:", Qstring)
 
 app = QtWidgets.QApplication(sys.argv)
 window = MainWindow()

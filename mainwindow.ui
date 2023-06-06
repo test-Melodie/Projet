@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>693</width>
-    <height>557</height>
+    <width>712</width>
+    <height>520</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -39,6 +39,15 @@
       <height>19</height>
      </rect>
     </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Password</string>
+    </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_2">
     <property name="geometry">
@@ -48,6 +57,9 @@
       <width>141</width>
       <height>19</height>
      </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Nom du robot</string>
     </property>
    </widget>
    <widget class="QProgressBar" name="progressBar">
@@ -82,7 +94,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>693</width>
+     <width>712</width>
      <height>22</height>
     </rect>
    </property>
@@ -90,5 +102,41 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>lineEdit_2</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onLoginIdChanged(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>80</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>343</x>
+     <y>278</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onLoginIdChanged(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>80</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>355</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onLoginIdChanged(QString)</slot>
+ </slots>
 </ui>
