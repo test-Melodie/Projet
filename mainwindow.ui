@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>712</width>
+    <width>732</width>
     <height>520</height>
    </rect>
   </property>
@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="Connexion">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -30,7 +30,7 @@
      <string>Connexion</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="Password">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -49,7 +49,7 @@
      <string>Password</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="Robot">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -88,13 +88,39 @@
      <number>24</number>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>554</x>
+      <y>290</y>
+      <width>111</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Automatique</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>554</x>
+      <y>320</y>
+      <width>111</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Manuel</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>712</width>
+     <width>732</width>
      <height>22</height>
     </rect>
    </property>
@@ -104,7 +130,7 @@
  <resources/>
  <connections>
   <connection>
-   <sender>lineEdit_2</sender>
+   <sender>Robot</sender>
    <signal>textChanged(QString)</signal>
    <receiver>MainWindow</receiver>
    <slot>onLoginIdChanged(QString)</slot>
@@ -120,17 +146,33 @@
    </hints>
   </connection>
   <connection>
-   <sender>lineEdit</sender>
+   <sender>Password</sender>
    <signal>textChanged(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>onLoginIdChanged(QString)</slot>
+   <slot>onPasswordChanged(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>80</x>
      <y>71</y>
     </hint>
     <hint type="destinationlabel">
-     <x>355</x>
+     <x>365</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Connexion</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onConnexionClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>80</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>365</x>
      <y>259</y>
     </hint>
    </hints>
@@ -138,5 +180,7 @@
  </connections>
  <slots>
   <slot>onLoginIdChanged(QString)</slot>
+  <slot>onPasswordChanged(QString)</slot>
+  <slot>onConnexionClick()</slot>
  </slots>
 </ui>
