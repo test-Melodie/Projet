@@ -17,6 +17,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.timer.timeout.connect(self.onTimerUpdate)
         self.ui = uic.loadUi("mainwindow.ui", self)
         self.auto=False
+        self.tir=True
 
     def onConnexionClicked(self):
         """
@@ -83,11 +84,11 @@ class MainWindow(QtWidgets.QMainWindow):
         self.agent.deplacerVers(x,y+1)
         print("Direction : bas")
     
-    def onTirClicked(self):
-        self.agent.tirer(True)
-    
-    def onNonTirClicked(self):
-        self.agent.tirer(False)
+    def onTirChecked(self,isChecked):
+        if self.tir==isChecked:
+            self.agent.tirer(True)
+        else:
+            self.agent.tirer(False)
 
 app = QtWidgets.QApplication(sys.argv)
 window = MainWindow()
