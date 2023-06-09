@@ -101,17 +101,17 @@ class MainWindow(QtWidgets.QMainWindow):
        """
        Lorsque le bouton est cliqué, cela lance le programme automatique
        """
-       self.changerEtatFSM1()
-       self.changerEtatFSM1Recherche()
-       self.rechercheMin()
-       self.eval()
-       self.evaluer()
-       self.AllerGauche()
-       self.AllerDroite()
-       self.AllerBas()
-       self.AllerHaut()
-       self.rechercher()
-       self.poursuivre()
+       changerEtatFSM1()
+       changerEtatFSMRecherche()
+       rechercheMin()
+       eval()
+       evaluer()
+       allerGauche()
+       allerDroite()
+       allerBas()
+       allerHaut()
+       rechercher()
+       poursuivre()
        if (etatFSM1 == "recherche"):
                     rechercher()
        elif (etatFSM1 == "poursuite"):
