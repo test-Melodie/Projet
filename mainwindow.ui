@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>684</width>
-    <height>486</height>
+    <width>733</width>
+    <height>507</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,26 +17,13 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>492</x>
-      <y>311</y>
-      <width>189</width>
-      <height>112</height>
+      <x>540</x>
+      <y>300</y>
+      <width>171</width>
+      <height>151</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout_2">
-     <item row="0" column="2">
-      <spacer name="horizontalSpacer_2">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
      <item row="0" column="1">
       <widget class="QPushButton" name="Haut">
        <property name="maximumSize">
@@ -50,6 +37,32 @@
        </property>
       </widget>
      </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="Gauche">
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Gauche</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
      <item row="2" column="2">
       <spacer name="horizontalSpacer_4">
        <property name="orientation">
@@ -62,19 +75,6 @@
         </size>
        </property>
       </spacer>
-     </item>
-     <item row="2" column="1">
-      <widget class="QPushButton" name="Bas">
-       <property name="maximumSize">
-        <size>
-         <width>50</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="text">
-        <string>Bas</string>
-       </property>
-      </widget>
      </item>
      <item row="1" column="2">
       <widget class="QPushButton" name="Droite">
@@ -115,8 +115,15 @@
        </property>
       </spacer>
      </item>
-     <item row="1" column="0">
-      <widget class="QPushButton" name="Gauche">
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="Tir">
+       <property name="text">
+        <string>Tir</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="Bas">
        <property name="maximumSize">
         <size>
          <width>50</width>
@@ -124,14 +131,7 @@
         </size>
        </property>
        <property name="text">
-        <string>Gauche</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QCheckBox" name="Tir">
-       <property name="text">
-        <string>Tir</string>
+        <string>Bas</string>
        </property>
       </widget>
      </item>
@@ -140,8 +140,8 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>520</x>
-      <y>250</y>
+      <x>560</x>
+      <y>240</y>
       <width>131</width>
       <height>49</height>
      </rect>
@@ -295,14 +295,20 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>290</y>
+      <x>30</x>
+      <y>310</y>
       <width>121</width>
-      <height>121</height>
+      <height>141</height>
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Orientation.svg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>
@@ -312,7 +318,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>684</width>
+     <width>733</width>
      <height>22</height>
     </rect>
    </property>
