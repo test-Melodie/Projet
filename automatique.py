@@ -10,6 +10,9 @@ etatFSMRecherche = "gauche"  # valeurs possibles : "gauche", "haut", "droite", "
 voisinCibleInfos = None
 
 def setAgent(nouvelagent):
+   """
+   Permet de rendre fonctionnel ce code sans boucle while true.
+   """
    global agent
    agent= nouvelagent
 
@@ -71,6 +74,9 @@ def eval(agentRef, voisin):
 
 
 def evaluer():
+  """
+  Permet d'évaluer les ennemis à proximité.
+  """
   agent.changerCouleur(255, 0, 255)
   global voisinCibleInfos
   # Evalue toutes les possibilités : pour chaque agent ennemi dont l'id est mis en clé, on associe en valeur son coût calculé par l'heuristique eval
@@ -90,6 +96,9 @@ def evaluer():
 
 
 def allerGauche():
+  """
+  Déplacement en vers la gauche.
+  """
   if (agent.x == 0 and agent.y == 29):
     changerEtatFSMRecherche("haut")
   else:
@@ -97,6 +106,9 @@ def allerGauche():
 
 
 def allerHaut():
+  """
+  Déplacement en vers le haut.
+  """  
   if (agent.x == 0 and agent.y == 0):
     changerEtatFSMRecherche("droite")
   else:
@@ -104,6 +116,9 @@ def allerHaut():
 
 
 def allerDroite():
+  """
+  Déplacement en vers la droite.
+  """  
   if (agent.x == 39 and agent.y == 0):
     changerEtatFSMRecherche("bas")
   else:
@@ -111,6 +126,9 @@ def allerDroite():
 
 
 def allerBas():
+  """
+  Déplacement en vers le bas.
+  """
   if (agent.x == 39 and agent.y == 29):
     changerEtatFSMRecherche("gauche")
   else:
@@ -118,6 +136,9 @@ def allerBas():
 
 
 def rechercher():
+  """
+  Permet de rechercher les agents ennemis.
+  """
   if (len(agent.voisins) != 0):
     # Ajouter la condition pour appeler la fonction de poursuite
     changerEtatFSM1("evaluation")
@@ -137,6 +158,9 @@ def rechercher():
 
 
 def poursuivre():
+  """
+  Permet de poursuivre l'ennemi évalué pour l'attaquer et l'éliminer.
+  """
   global voisinCibleInfos
   if (agent.x == voisinCibleInfos["x"] and agent.y == voisinCibleInfos["y"]):
     changerEtatFSM1("recherche")

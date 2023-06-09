@@ -43,13 +43,22 @@ class MainWindow(QtWidgets.QMainWindow):
         self.timer.start()
 
     def onLoginIdChanged(self, name):
+        """
+        Permet d'entrer le nom du robot et affiche dans la console ce qui est marqué.
+        """
         self.name=name
         print("Login Id changed:", name)
 
     def onPasswordChanged(self, password):
+        """
+        Permet d'entrer le mot de passe de manière sécurisée.
+        """
         self.password=password
 
-    def onTimerUpdate(self):        
+    def onTimerUpdate(self):   
+        """
+        On y retrouve l'actualisation de l'agent et les barres de progression de vie et du stock de munitions. Cela permet de remplacer la boucle while true.
+        """     
         if ( self.agent != None ):
             self.agent.actualiser()
             if ( self.agent.vie > self.ui.LifeBar.maximum() ):
@@ -62,29 +71,47 @@ class MainWindow(QtWidgets.QMainWindow):
                 automatique.actualiserFSM()
 
     def onAutoChecked(self,isChecked):
+        """
+        Active le mode automatique lorsque la case est cochée 
+        """
         self.auto=isChecked
 
     def onHautClicked(self):
+        """
+        Déplacement en vers le haut
+        """
         x,y = self.agent.x, self.agent.y
         self.agent.deplacerVers(x,y-1)
         print("Direction : haut")
 
     def onGaucheClicked(self):
+        """
+        Déplacement en vers la gauche.
+        """
         x,y = self.agent.x, self.agent.y
         self.agent.deplacerVers(x-1,y)
         print("Direction : gauche")
 
     def onDroiteClicked(self):
+        """
+        Déplacement en vers la droite.
+        """
         x,y = self.agent.x, self.agent.y
         self.agent.deplacerVers(x+1,y)
         print("Direction : droite")
 
     def onBasClicked(self):
+        """
+        Déplacement en vers le bas.
+        """
         x,y = self.agent.x, self.agent.y
         self.agent.deplacerVers(x,y+1)
         print("Direction : bas")
     
     def onTirChecked(self,isChecked):
+        """
+        Lorsque la case est cochée, le tir est activé sinon le tir est désactivé.
+        """
         if self.tir==isChecked:
             self.agent.tirer(True)
         else:
