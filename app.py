@@ -1,3 +1,4 @@
+# Fichier servant de test de Qt5
 import sys
 
 from PyQt5.QtCore import Qt
