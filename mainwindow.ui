@@ -63,19 +63,6 @@
        </property>
       </spacer>
      </item>
-     <item row="1" column="1">
-      <widget class="QPushButton" name="Tir_3">
-       <property name="maximumSize">
-        <size>
-         <width>50</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="text">
-        <string>Tir</string>
-       </property>
-      </widget>
-     </item>
      <item row="2" column="1">
       <widget class="QPushButton" name="Bas">
        <property name="maximumSize">
@@ -141,32 +128,26 @@
        </property>
       </widget>
      </item>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="Tir">
+       <property name="text">
+        <string>Tir</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>530</x>
+      <x>520</x>
       <y>250</y>
-      <width>101</width>
+      <width>131</width>
       <height>49</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout_3">
-     <item row="1" column="0">
-      <widget class="QPushButton" name="NonTir">
-       <property name="maximumSize">
-        <size>
-         <width>50</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="text">
-        <string>NonTir</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
+     <item row="0" column="0">
       <widget class="QCheckBox" name="Auto">
        <property name="text">
         <string>Auto</string>
@@ -240,8 +221,8 @@
      <rect>
       <x>220</x>
       <y>10</y>
-      <width>451</width>
-      <height>24</height>
+      <width>509</width>
+      <height>31</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
@@ -261,6 +242,19 @@
        </property>
        <property name="scaledContents">
         <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QProgressBar" name="MunitionsBar">
+       <property name="maximumSize">
+        <size>
+         <width>191</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="value">
+        <number>100</number>
        </property>
       </widget>
      </item>
@@ -296,32 +290,19 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="3">
-      <widget class="QProgressBar" name="MunitionsBar">
-       <property name="maximumSize">
-        <size>
-         <width>191</width>
-         <height>21</height>
-        </size>
-       </property>
-       <property name="value">
-        <number>100</number>
-       </property>
-      </widget>
-     </item>
     </layout>
    </widget>
-   <widget class="QCheckBox" name="Tir">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>260</y>
-      <width>41</width>
-      <height>18</height>
+      <x>70</x>
+      <y>290</y>
+      <width>121</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="text">
-     <string>Tir</string>
+     <string>TextLabel</string>
     </property>
    </widget>
   </widget>
