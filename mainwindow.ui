@@ -6,150 +6,218 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>712</width>
-    <height>503</height>
+    <width>679</width>
+    <height>486</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QPushButton" name="NonTir">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>10</y>
-      <width>15</width>
-      <height>15</height>
+      <x>560</x>
+      <y>200</y>
+      <width>50</width>
+      <height>30</height>
      </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>30</height>
+     </size>
     </property>
     <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../testbold.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
+     <string>NonTir</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>580</x>
-      <y>360</y>
-      <width>101</width>
-      <height>101</height>
+      <x>492</x>
+      <y>311</y>
+      <width>171</width>
+      <height>112</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="gridLayout">
-     <item row="1" column="2">
-      <widget class="QPushButton" name="Droite">
-       <property name="text">
-        <string>Droite</string>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="2">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
        </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QPushButton" name="Gauche">
-       <property name="text">
-        <string>Gauche</string>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
        </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="QPushButton" name="Bas">
-       <property name="text">
-        <string>Bas</string>
-       </property>
-      </widget>
+      </spacer>
      </item>
      <item row="0" column="1">
       <widget class="QPushButton" name="Haut">
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>30</height>
+        </size>
+       </property>
        <property name="text">
         <string>Haut</string>
        </property>
       </widget>
      </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>590</x>
-      <y>290</y>
-      <width>81</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout_2">
-     <item row="0" column="0">
-      <widget class="QPushButton" name="Automatique">
+     <item row="2" column="2">
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="Tir">
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>30</height>
+        </size>
+       </property>
        <property name="text">
-        <string>Automatique</string>
+        <string>Tir</string>
        </property>
       </widget>
      </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="Bas">
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Bas</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="Droite">
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Droite</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="0">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="Gauche">
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Gauche</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>240</y>
+      <width>101</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
      <item row="1" column="0">
       <widget class="QPushButton" name="Manuel">
+       <property name="maximumSize">
+        <size>
+         <width>79</width>
+         <height>23</height>
+        </size>
+       </property>
        <property name="text">
         <string>Manuel</string>
        </property>
       </widget>
      </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>0</y>
-      <width>381</width>
-      <height>79</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout_3">
-     <item row="0" column="1">
-      <widget class="QLabel" name="label_2">
-       <property name="text">
-        <string/>
-       </property>
-       <property name="pixmap">
-        <pixmap>../target (1).svg</pixmap>
-       </property>
-       <property name="scaledContents">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="2">
-      <widget class="QProgressBar" name="MunitionsBar">
-       <property name="value">
-        <number>100</number>
-       </property>
-      </widget>
-     </item>
      <item row="0" column="0">
-      <widget class="QProgressBar" name="LifeBar">
-       <property name="value">
-        <number>100</number>
+      <widget class="QPushButton" name="Automatique">
+       <property name="maximumSize">
+        <size>
+         <width>79</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Automatique</string>
        </property>
       </widget>
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>10</y>
       <width>116</width>
-      <height>75</height>
+      <height>91</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout_4">
      <item row="0" column="0">
       <widget class="QLineEdit" name="Robot">
+       <property name="maximumSize">
+        <size>
+         <width>114</width>
+         <height>19</height>
+        </size>
+       </property>
        <property name="placeholderText">
         <string>Nom du robot</string>
        </property>
@@ -157,6 +225,12 @@
      </item>
      <item row="1" column="0">
       <widget class="QLineEdit" name="Password">
+       <property name="maximumSize">
+        <size>
+         <width>114</width>
+         <height>19</height>
+        </size>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -173,8 +247,90 @@
        <property name="enabled">
         <bool>true</bool>
        </property>
+       <property name="maximumSize">
+        <size>
+         <width>114</width>
+         <height>23</height>
+        </size>
+       </property>
        <property name="text">
         <string>Connexion</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>10</y>
+      <width>451</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="coeur">
+       <property name="maximumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../heart-bold.svg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QProgressBar" name="LifeBar">
+       <property name="maximumSize">
+        <size>
+         <width>191</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="value">
+        <number>100</number>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="munitions">
+       <property name="maximumSize">
+        <size>
+         <width>22</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../target (1).svg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QProgressBar" name="MunitionsBar">
+       <property name="maximumSize">
+        <size>
+         <width>191</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="value">
+        <number>100</number>
        </property>
       </widget>
      </item>
@@ -187,7 +343,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>712</width>
+     <width>679</width>
      <height>22</height>
     </rect>
    </property>
@@ -196,34 +352,18 @@
  <resources/>
  <connections>
   <connection>
-   <sender>Robot</sender>
-   <signal>textChanged(QString)</signal>
+   <sender>Bas</sender>
+   <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>onLoginIdChanged(QString)</slot>
+   <slot>onBasClicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>80</x>
-     <y>41</y>
+     <x>630</x>
+     <y>464</y>
     </hint>
     <hint type="destinationlabel">
-     <x>343</x>
-     <y>278</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>Password</sender>
-   <signal>textChanged(QString)</signal>
-   <receiver>MainWindow</receiver>
-   <slot>onPasswordChanged(QString)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>80</x>
-     <y>71</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>365</x>
-     <y>259</y>
+     <x>355</x>
+     <y>251</y>
     </hint>
    </hints>
   </connection>
@@ -244,14 +384,46 @@
    </hints>
   </connection>
   <connection>
-   <sender>Haut</sender>
-   <signal>clicked()</signal>
+   <sender>Password</sender>
+   <signal>textChanged(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>onHautClicked()</slot>
+   <slot>onPasswordChanged(QString)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>630</x>
-     <y>398</y>
+     <x>80</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>365</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Robot</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onLoginIdChanged(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>80</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>343</x>
+     <y>278</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Droite</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onDroiteClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>665</x>
+     <y>431</y>
     </hint>
     <hint type="destinationlabel">
      <x>355</x>
@@ -276,14 +448,14 @@
    </hints>
   </connection>
   <connection>
-   <sender>Droite</sender>
+   <sender>Haut</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>onDroiteClicked()</slot>
+   <slot>onHautClicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>665</x>
-     <y>431</y>
+     <x>630</x>
+     <y>398</y>
     </hint>
     <hint type="destinationlabel">
      <x>355</x>
@@ -292,18 +464,50 @@
    </hints>
   </connection>
   <connection>
-   <sender>Bas</sender>
+   <sender>Tir</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>onBasClicked()</slot>
+   <slot>onTirClicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>630</x>
-     <y>464</y>
+     <x>577</x>
+     <y>388</y>
     </hint>
     <hint type="destinationlabel">
-     <x>355</x>
-     <y>251</y>
+     <x>339</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>NonTir</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onNonTirClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>584</x>
+     <y>236</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>339</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Automatique</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onAutomatiqueClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>580</x>
+     <y>276</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>339</x>
+     <y>242</y>
     </hint>
    </hints>
   </connection>
@@ -316,5 +520,8 @@
   <slot>onBasClicked()</slot>
   <slot>onDroiteClicked()</slot>
   <slot>onGaucheClicked()</slot>
+  <slot>onTirClicked()</slot>
+  <slot>onNonTirClicked()</slot>
+  <slot>onAutomatiqueClicked()</slot>
  </slots>
 </ui>
