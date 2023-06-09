@@ -37,7 +37,7 @@ class MainWindow(QtWidgets.QMainWindow):
         print("Connexion")
         self.agent = pytactx.AgentFr(
             nom=self.name, 
-            arene="numsup2223", 
+            arene="numsup2223beta", 
             username="demo",
             password=self.password, 
             url="mqtt.jusdeliens.com", 
