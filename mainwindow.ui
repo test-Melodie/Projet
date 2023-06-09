@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>679</width>
+    <width>684</width>
     <height>486</height>
    </rect>
   </property>
@@ -14,31 +14,12 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="NonTir">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>200</y>
-      <width>50</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>50</width>
-      <height>30</height>
-     </size>
-    </property>
-    <property name="text">
-     <string>NonTir</string>
-    </property>
-   </widget>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>492</x>
       <y>311</y>
-      <width>171</width>
+      <width>189</width>
       <height>112</height>
      </rect>
     </property>
@@ -83,7 +64,7 @@
       </spacer>
      </item>
      <item row="1" column="1">
-      <widget class="QPushButton" name="Tir">
+      <widget class="QPushButton" name="Tir_3">
        <property name="maximumSize">
         <size>
          <width>50</width>
@@ -166,35 +147,29 @@
     <property name="geometry">
      <rect>
       <x>530</x>
-      <y>240</y>
+      <y>250</y>
       <width>101</width>
-      <height>61</height>
+      <height>49</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout_3">
      <item row="1" column="0">
-      <widget class="QPushButton" name="Manuel">
+      <widget class="QPushButton" name="NonTir">
        <property name="maximumSize">
         <size>
-         <width>79</width>
-         <height>23</height>
+         <width>50</width>
+         <height>30</height>
         </size>
        </property>
        <property name="text">
-        <string>Manuel</string>
+        <string>NonTir</string>
        </property>
       </widget>
      </item>
-     <item row="0" column="0">
-      <widget class="QPushButton" name="Automatique">
-       <property name="maximumSize">
-        <size>
-         <width>79</width>
-         <height>23</height>
-        </size>
-       </property>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="Auto">
        <property name="text">
-        <string>Automatique</string>
+        <string>Auto</string>
        </property>
       </widget>
      </item>
@@ -336,6 +311,19 @@
      </item>
     </layout>
    </widget>
+   <widget class="QCheckBox" name="Tir">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>260</y>
+      <width>41</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tir</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">
@@ -343,7 +331,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>679</width>
+     <width>684</width>
      <height>22</height>
     </rect>
    </property>
@@ -464,49 +452,33 @@
    </hints>
   </connection>
   <connection>
+   <sender>Auto</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onAutoChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>460</x>
+     <y>250</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>341</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
    <sender>Tir</sender>
-   <signal>clicked()</signal>
+   <signal>toggled(bool)</signal>
    <receiver>MainWindow</receiver>
-   <slot>onTirClicked()</slot>
+   <slot>onTirChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>577</x>
-     <y>388</y>
+     <x>410</x>
+     <y>290</y>
     </hint>
     <hint type="destinationlabel">
-     <x>339</x>
-     <y>242</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>NonTir</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>onNonTirClicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>584</x>
-     <y>236</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>339</x>
-     <y>242</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>Automatique</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>onAutomatiqueClicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>580</x>
-     <y>276</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>339</x>
+     <x>341</x>
      <y>242</y>
     </hint>
    </hints>
@@ -522,6 +494,7 @@
   <slot>onGaucheClicked()</slot>
   <slot>onTirClicked()</slot>
   <slot>onNonTirClicked()</slot>
-  <slot>onAutomatiqueClicked()</slot>
+  <slot>onAutoChecked(bool)</slot>
+  <slot>onTirChecked(bool)</slot>
  </slots>
 </ui>
